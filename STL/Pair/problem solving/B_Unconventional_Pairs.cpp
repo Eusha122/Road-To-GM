@@ -21,7 +21,7 @@ int main() {
       }
       sort(v.begin(), v.end());
 
-      vector<int> sum(a/2);
+      vector<int> sum;
 
       for(int i=0; i<a; i+=2){
 
@@ -35,8 +35,10 @@ int main() {
       }
       
 
-      cout<<sum.back()<<endl;
+      cout<< *max_element(sum.begin(), sum.end())<<endl;
    }
 
    return 0;
 }
+
+////https://codeforces.com/problemset/problem/2149/B
