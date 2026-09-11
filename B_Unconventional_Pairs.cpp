@@ -29,8 +29,13 @@ int main() {
          
          p.first = v[i];
          p.second =v[i+1];
-         
+
+         int a1 = abs(p.first - p.second);
+         sum.push_back(a1);
       }
+      
+
+      cout<<sum.back()<<endl;
    }
 
    return 0;
