@@ -28,5 +28,5 @@ int main() {
       cout<<*v.begin()<<" "<<*(v.end()-1)<<endl;
    }
 
-   return 0;
+   return 0;0
 }
