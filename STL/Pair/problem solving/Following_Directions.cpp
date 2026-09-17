@@ -11,13 +11,31 @@ int main() {
 
    while(tst--){
       int a; cin>>a;
-      vector<char> v(a);
+      string v;
+      cin>>v;
 
-      pair<int,int> 
+      pair<int,int> p= {0,0};
+      pair<int, int> candy = {1,1};
 
-      for(int i=0; i<a; i++){
-         cin>>v[i];
+      
+
+      for(int i=0; i<v.length(); i++){
+         
+         if(v[i]=='U') p.second++;
+         else if(v[i]=='D') p.second--;
+         else if (v[i]=='L')p.first--;
+         else if (v[i] == 'R') p.first++;
       }
+
+      cout<<p.first<<" "<<p.second<<endl;
+
+      // if(p==candy){
+      //    cout<<"YES"<<endl;
+      // }
+
+      // else cout<<"NO"<<endl;
+      
+      
    }
 
    return 0;
