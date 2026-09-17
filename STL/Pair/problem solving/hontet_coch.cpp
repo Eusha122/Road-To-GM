@@ -20,11 +20,14 @@ int main() {
       }
 
       int min_diff = 1000000;
-      for(int i=0; i<a-1; i++){
+      for(int i=0; i<a; i++){
          for(int j =i+1; j<a; j++){
 
-            if(min_diff>(v[i]-v[j]) && 0<=(v[i]-v[j]) ){
+            if(min_diff>(v[i]-v[j]) && 0<=(v[i]-v[j] ) ){
                min_diff =(v[i]-v[j]);
+            }
+            else if(min_diff>(v[j]-v[i]) && 0<=(v[j]-v[i] ) ){
+               min_diff =(v[j]-v[i]);
             }
          }
       }
