@@ -14,12 +14,16 @@ int main() {
       string v;
       cin>>v;
 
-      pair<int,int> p= {0,0};
+      pair<int,int> p= make_pair(0,0);
       pair<int, int> candy = {1,1};
 
       
 
       for(int i=0; i<v.length(); i++){
+
+         if(p.first==1 && p.second==1){
+            break;
+         }
          
          if(v[i]=='U') p.second++;
          else if(v[i]=='D') p.second--;
@@ -27,13 +31,13 @@ int main() {
          else if (v[i] == 'R') p.first++;
       }
 
-      cout<<p.first<<" "<<p.second<<endl;
+      // cout<<p.first<<" "<<p.second<<endl;
 
-      // if(p==candy){
-      //    cout<<"YES"<<endl;
-      // }
+      if(p==candy){
+         cout<<"YES"<<endl;
+      }
 
-      // else cout<<"NO"<<endl;
+      else cout<<"NO"<<endl;
       
       
    }
