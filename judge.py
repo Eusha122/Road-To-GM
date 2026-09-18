@@ -1,22 +1,34 @@
 import subprocess
 
 p = subprocess.Popen(
-    ["./solution"],
+    ["./solution.exe"],
     stdin=subprocess.PIPE,
     stdout=subprocess.PIPE,
     text=True
 )
 
-while True:
-    line = p.stdout.readline()
+queries = [
+    "Is it rated?",
+    "Is it rated?",
+    "Is it rated?"
+]
 
-    if not line:
+for query in queries:
+
+    print("JUDGE:", query)
+
+    # Send input to C++
+    p.stdin.write(query + "\n")
+    p.stdin.flush()
+
+    # Read C++ output
+    answer = p.stdout.readline()
+
+    if not answer:
+        print("Program terminated.")
         break
 
-    print("PROGRAM:", line.strip())
+    print("PROGRAM:", answer.strip())
 
-    # Decide what the judge should answer here.
-    response = input("JUDGE RESPONSE: ")
-
-    p.stdin.write(response + "\n")
-    p.stdin.flush()
+p.stdin.close()
+p.wait()
