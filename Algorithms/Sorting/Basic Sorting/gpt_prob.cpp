@@ -18,11 +18,11 @@ int main() {
       return a<b;
    });
 
-   int min_diff =10000000;
+   int min_diff =1000000;
    for(int i=0 ; i<n-1; i++){
 
       
-      if(abs(v[i]-v[i+1]<min_diff)){
+      if(abs((v[i]-v[i+1]))<min_diff){
          min_diff = abs(v[i]-v[i+1]);
       }
 
