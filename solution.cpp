@@ -8,12 +8,9 @@ int main() {
 
    string s;
 
-   while(getline(cin,s)){
-      
-      if(s == "Is it rated?"){
-         cout<<"NO"<<endl;
-      }
-   }
+   int a,b;
+   cin>>a>>b;
+   cout<<a+b;
 
    return 0;
 }

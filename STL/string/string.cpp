@@ -10,6 +10,7 @@ int main() {
 
    cout<<s.substr(2,4);
 
+   cout<<"\n"<<s.;
 
 
    return 0;
