@@ -1,12 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+#include <random>
 int main() {
     
+   
    ios::sync_with_stdio(false);
    cin.tie(nullptr);
 
    int tst;
+   
    cin>>tst;
    while(tst--){
       string s;
