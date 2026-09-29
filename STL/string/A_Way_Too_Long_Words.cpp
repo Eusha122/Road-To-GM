@@ -19,7 +19,7 @@ int main() {
       if(s.size()<11){
          cout<<s<<endl;
       }
-      
+       
       
       
       else{
