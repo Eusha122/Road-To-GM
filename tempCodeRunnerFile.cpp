@@ -14,8 +14,8 @@ int main() {
       int a;
       cin>>a;
 
-      vector<int> v(3);
-      for(int i=0; i<3; i++){
+      vector<int> v(a);
+      for(int i=0; i<a; i++){
          cin>>v[i];
 
       }
