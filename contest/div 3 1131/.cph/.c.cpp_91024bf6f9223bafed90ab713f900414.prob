@@ -1,0 +1,1 @@
+{"name":"Local: c","url":"d:\\Road to grandmaster\\contest\\div 3 1131\\c.cpp","tests":[{"id":1793461085352,"input":"3\n4\n1 2 3 4\n5\n1 1 1 1 1\n2\n6 7\n","output":"9\n-1\n12\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Road to grandmaster\\contest\\div 3 1131\\c.cpp","group":"local","local":true}
