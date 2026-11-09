@@ -11,11 +11,12 @@ int main() {
    while(cin>>x){
       v.push_back(x);
    }
+   // reverse(v.begin(), v.end());
 
    for(int i=0; i<v.size(); i++){
       for(int j=0; j<v.size()-1; j++){
          if(v[j]>v[i]){
-            swap(v[j],v[i]);
+            swap(v[i],v[j]);
          }
       }
    }
